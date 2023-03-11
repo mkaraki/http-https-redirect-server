@@ -1,0 +1,10 @@
+[Unit]
+Description=Lightweight https redirector
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/http-https-redirect-server/http-https-redirect-server
+
+[Install]
+WantedBy=multi-user.target
